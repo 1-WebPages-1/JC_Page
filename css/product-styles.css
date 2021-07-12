@@ -1,0 +1,148 @@
+:root
+{
+    --P_Container_Display: grid;
+    --P_Container_Sizes: repeat(1fr,3);
+    --P_Container_Design: "PIm PIm CCard";
+}
+
+/* Product presentation style's */
+
+body
+{
+    line-height: 30px;
+}
+
+.Prod_pre_Container
+{
+    width: 80%;
+    display: var(--P_Container_Display);
+    grid-template-columns: var(--P_Container_Sizes);
+    grid-template-areas: var(--P_Container_Design);
+    margin: 30px auto 50px auto;
+    gap: 20px;
+}
+
+.Prod_pre_Title
+{
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+.Prod_pre_Img
+{
+    grid-area: PIm;
+}
+.Prod_pre_BoxC
+{
+    grid-area: CCard;
+    margin: auto auto;
+}
+
+.Whats_Prod_btn
+{
+    background:var(--background-btn_Prod);
+    color:#fff;
+}
+
+/* For other's product's title */
+
+h2.T_In_Title
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ProdPaT
+{
+    text-align: center;
+}
+
+/* Product Slider */
+
+.Prod_pre_Img
+{
+    width: 500px;
+    height: 500px;
+}
+
+ul.slider
+{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+ul.slider li
+{
+    position:absolute;
+    left:0;
+    top: 0;
+    opacity:0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+ul.slider li img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul.slider li:first-child
+{
+    opacity: 1;
+}
+
+ul.slider li:target
+{
+    opacity: 1;
+}
+
+.slider_menu
+{
+    text-align: center;
+    margin: 10px;
+}
+
+.slider_menu li
+{
+    display: inline-block;
+    text-align: center;
+}
+
+@media(max-width: 768px)
+{
+    .Prod_pre_Container
+    {
+        grid-template-columns: auto;
+    }
+
+    .Prod_pre_Img
+    {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .Prod_pre_Container
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: "PIm"
+                             "CCard";
+    }
+
+    .Prod_pre_Img
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    .Prod_pre_Title
+    {
+        margin-top: 30px;
+    }
+}

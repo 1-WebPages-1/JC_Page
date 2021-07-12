@@ -1,0 +1,35 @@
+we have the size that you should use for your website banner and more:
+
+-for menu logo: 50x50 (px);
+
+-for browser: 25x25 (px) or 50x50 (px);
+
+>>Images
+
+Computer:
+
+-bigger banner: 984x500 (px);
+
+-middle banner: 984x334 (px);
+
+TABLET:
+-bigger banner: 728x350 (px);
+-middle banner: 728x210 (px);
+
+Phone: 
+
+-bigger banner: 300x190(px);
+-middle banner: 300x130 (px);
+
+
+Products:
+Maybe this is not like this but it's a recommendation
+
+computer, tablet and mobile: 
+
+
+     300   x    350
+width(^)      height(^)
+
+
+that depends of your product or service

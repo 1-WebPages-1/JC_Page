@@ -1,0 +1,648 @@
+/* If you want to modify something, just change the variables, and it will works, IF YOU DON'T WANT TO WORK TWICE */
+:root
+{
+    /* Background,title's color, text-color & links color */
+    --background-C: rgb(12 10 10);
+    --H1-Color: #fff;
+    --H2-Color: #fff;
+    --H3-Color: #fff;
+    --H4-Color: #fff;
+    --Text-Color: #fff;
+    --A-Color: #fff;
+    --Span-Color: #fff;
+
+    /* Font Size */
+
+    --H1-Size: 2.1rem;
+    --H2-Size: 2rem;
+    --H3-Size: 1.9rem;
+    --H4-Size: 1.8rem;
+    --Text-Size: 1.7rem;
+    --A-Size: 1.7rem;
+    --Span-Size: 1.7rem;
+
+    /* list Style's & link Style*/
+
+    --LI-Sty: none;
+    --A-Sty: none;
+
+    /* Overflow default */
+
+    --Ov-X: none;
+    --Ov-Y: block;
+
+    /* Box Shadow & background */
+
+    --Box-def-Background: red;
+    --Box-Shadow-Def: 0 0 10px #000;
+
+    /* default Border & Border Radius for everything */
+
+    --Border-Def: #000 1px solid;
+    --Bord-Rad-def: 12px;
+
+    /* border radius for icon */
+
+    --Bord-Rad-FI-def: 50%;
+
+    /* Default animation for hover */
+
+    --Lil-Zoom-1: scale(1.05);
+    --An-Delay: .3s;
+    --Rot-a-Bit: rotate(20deg);
+
+    /* Buttons Style */
+
+    --Padd-btn: 10px;
+    --Bord-btn: 1px solid black;
+    --BordRad-btn: 15px;
+    --background-btn: #fff;
+    --Tcol-btn: #000;
+    --Btn-a: #000;
+
+    /* Banners big and medium, default size */
+
+    /* default size's */
+
+    --Def_pre_Size-W: 100%;
+    --Def_pre_Size-W2: 80%;
+    --Def_pre_Size-H: 50vh;
+    --Def_pre_Size-H-med:40vh;
+
+    /* Especific Size's */
+
+        /* >>>>>COMPUTER<<<<< */
+
+    /* BIGGER */
+    --Comp_big_width: 984px;
+    --Comp_big_height: 500px;
+
+    /* MEDIUM */
+    --Comp_med_width: 984px;
+    --Comp_med_height: 334px;
+    
+        /* >>>>>TABLET<<<<< */
+    
+    /* BIGGER */
+    --Tablet_big_width: 728px;
+    --Tablet_big_height: 350px;
+
+    /* MEDIUM */
+    --Tablet_med_width: 728px;
+    --Tablet_med_height: 210px;
+
+
+        /* >>>>>PHONE<<<<< */
+
+    /* BIGGER */
+    --Phone_big_width: 300px;
+    --Phone_big_height: 190px;
+ 
+    /* MEDIUM */
+    --Phone_med_width: 300px;
+    --Phone_med_height: 130px;
+
+    /* Banner default text color & width */
+    
+    --Te_Ban-width: 80%;
+    --Ban-Col: #fff;
+
+    /* Company Logo Default Size */
+    
+    --Menu-logo_Width: 35px;
+    --Menu-logo_Height: 35px;
+    
+    
+    /* Products */
+
+    --Space-Btw-Prod: 10px 10px;
+    --Pad-Prod: 10px;
+    --Margin-bet-Prod: 10px auto;
+    --Prod-Card-Color: #32425283;
+    --Col-Prod-text: #fff;
+    --Prod-font-Size-Title: 2.3rem;
+
+    /* Product-Card size's */
+    --Prod-Width: 300px;
+    --Prod-height: 430px;
+
+    /* Mobile prod size */
+
+    --Prod-Width_mob: 280px;
+    --Prod-height_mob: 430px;
+
+
+    /* Product button */
+    --Padd-btn_Prod: 10px;
+    --Bord-btn_Prod: 2px solid #fff;
+    --BordRad-btn_Prod: 15px;
+    --background-btn_Prod: #00bb2d;
+    --Tcol-btn_Prod: #000;
+    --Btn-a_Prod: #fff;
+
+
+
+    /* Social icons */
+
+    --Social_Links-Title: 3rem;
+    --Social_Links-A: #fff;
+
+    /* footer modifications */
+
+    --FootBackground: rgb(68, 65, 65);
+    --FootTextCol:#d6d6d6;
+    --FootACol: #fff;
+    --FootTitleCol: rgb(158, 158, 158);
+    --FootCopyR: rgb(194, 194, 194);
+
+}
+
+/* Changin default browser styles */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    /* for inclusive design */
+    font-size: 62.5%;
+    overflow-x: none !important;
+}
+
+body
+{
+    background:var(--background-C);
+    color: var(--Text-Color);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1
+{
+    font-size:var(--H1-Size);
+    color: var(--H1-Color);
+}
+
+h2
+{
+    font-size: var(--H2-Size);
+    color: var(--H2-Color);
+}
+
+h3
+{
+    font-size: var(--H3-Size);
+    color: var(--H3-Color);
+}
+
+h4
+{
+    font-size: var(--H4-Size);
+    color: var(--H4-Color);
+}
+
+p
+{
+    font-size: var(--Text-Size);
+    color: var(--Text-Color);
+}
+
+a
+{
+    font-size: var(--A-Size);
+    color: var(--A-Color);
+    text-decoration: var(--A-Sty);
+}
+
+a:hover
+{
+    text-decoration:underline;
+    color: var(--Col-link-hover);
+}
+
+ul
+{
+    list-style: var(--LI-Sty);
+}
+
+span
+{
+    font-size: var(--Span-Size);
+    color: var(--Span-Color);
+}
+
+button
+{
+    padding: var(--Padd-btn);
+    background-color:var(--background-btn);
+    color: var(--Tcol-btn);
+    font-size: var(--A-Size);
+    border-radius: var(--BordRad-btn);
+    border: var(--Bord-btn);
+    outline: none;
+    cursor: pointer;
+}
+
+button a
+{
+    color: var(--Btn-a);
+}
+
+/* Website header */
+
+.header
+{
+    display: fixed;
+    margin: 10px;
+}
+
+.head-container
+{
+    display: flex;
+    align-items: center;
+}
+
+/* Company Logo */
+
+.Web-Logo img
+{
+    width: var(--Menu-logo_Width);
+    height: var(--Menu-logo_Height);
+}
+
+/* disablign menu button */
+.M-Icon-Container
+{
+    display: none;
+    background-image: url('../assets/icons/jc-page-logo.png')
+}
+
+/* links del menu */
+
+.nav-container 
+{
+    width: 100%;
+    text-align: center;
+}
+
+.MenuList li
+{
+    display: inline-block;
+    margin: 0 10px;
+}
+/* Allcontainer */
+
+.AllContainer
+{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+/* For Info-Text style */
+
+.T_In_cont
+{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.T_In_Title
+{
+    margin: 10px auto;
+}
+
+.T_In_Text
+{
+    margin: 10px auto;
+}
+
+
+/* >>>>>>>>>>>-Web Content-<<<<<<<<<< */
+
+
+/* Banner 1 */
+.C-Bn
+{
+    width: var(--Def_pre_Size-W);
+    height: var(--Comp_big_height);
+    background-image: url('../assets/banners/computer/984x500-banner-COMP-for-home.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . ."
+                         ". text text text ."
+                         ". . . . ."
+}
+
+.Ban-Text-I-container
+{
+    grid-area: text;
+    width:var(--Te_Ban-width);
+    margin: auto;
+}
+
+.C-Bn-text
+{
+    color: var(--Ban-Col);
+}
+
+.C-Bn-Title
+{
+    font-size: 4rem;
+    text-shadow: 0 0 10px #000;
+    margin: 10px auto;
+}
+
+
+/* Banner Type 2 */
+.Tp2
+{
+    width: var(--Def_pre_Size-W2);
+    height: var(--Comp_med_height);
+    background-image: url('../assets/banners/computer/984x334-banner-for-COMP-medium.png');
+}
+
+/* Products */
+
+.Prod-cont
+{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.Prod
+{
+    width: var(--Prod-Width);
+    height: var(--Prod-height);
+    display: inline-block;
+    margin: var(--Space-Btw-Prod);
+    padding: var(--Pad-Prod);
+    background-color: var(--Prod-Card-Color);
+    box-shadow: var(--Box-Shadow-Def);
+    align-items: center;
+}
+
+.Prod-text
+{
+    font-size: var(--Prod-font-Size-Title);
+    color: var(--Col-Prod-text);
+    margin: var(--Margin-bet-Prod);
+}
+
+.Prod img
+{
+    width: 100%;
+    border-radius:var(--BordRad-btn_Prod);
+}
+
+.Prod:hover
+{
+    border-radius:var(--Bord-Rad-def);
+    transform: var(--Lil-Zoom-1);
+    transition: var(--An-Delay);
+    background-color: rgb(144, 144, 144);
+}
+
+/* Product btn */
+
+.Prod_Button
+{
+    padding:var(--Padd-btn_Prod);
+    border:var(--Bord-btn_Prod);
+    border-radius:var(--BordRad-btn_Prod);
+    background:var(--background-btn_Prod);
+    color:var(--Tcol-btn_Prod);
+}
+
+.Prod_Button a
+{
+    color:var(--Btn-a_Prod);
+}
+/* 
+.Prod_Button a:hover
+{
+} */
+
+.C-Prod h2
+{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Social icons */
+
+.Social-i-Container
+{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 50px;
+}
+
+.Social-i-Title
+{
+    font-size: var(--Social_Links-Title);
+}
+
+.Social-i-Container li
+{
+    display: inline-block;
+    margin: 0 5px;
+}
+.Social-i-Container i
+{
+    color: var(--Social_Links-A);
+}
+
+.Social-i-Container i:hover
+{
+    color:#00bb2d;
+}
+
+/* Footer things */
+
+.footer
+{
+    background-color: var(--FootBackground);
+    color: var(--FootACol);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.F-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.F-Link-contain
+{
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.footer h1,.footer h2,.footer h3,.footer h4
+{
+    color:var(--FootTitleCol);
+}
+
+.footer a
+{
+    color: var(--FootACol);
+}
+
+.footer span
+{
+    color: var(--FootCopyR);
+    margin-bottom: 10px;
+}
+
+#cajacookies 
+{
+    background-color: rgb(142, 163, 195);
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+  
+#cajacookies button 
+{
+    background-color: rgb(221, 102, 4);
+    color: #fff;
+    padding: 5px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+
+/* Media Query config */
+
+
+@media(max-width: 768px)
+{
+    .C-Bn
+    {
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
+        background-image: url('../assets/banners/tablet/728x350px-bigger-img.png');
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: ". . ."
+                             "text text text"
+                             ". . ."
+    }
+    .Tp2
+    {
+        width: var(--Def_pre_Size-W2);
+        height: var(--Def_pre_Size-H-med);
+        background-image: url('../assets/banners/tablet/728x210-mid-img.png');
+    }
+
+    /* Menu Icon */
+
+    .M-Icon-Container
+    {
+        display: block;
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+        border-radius: 50%;
+        padding: 15px;
+        border: 3px solid black;
+        background-color: white;
+        z-index: 9;
+    }
+
+    .M-fixed
+    {
+        position: fixed;
+    }
+
+    /* Menu for Tab & Mob */
+
+    .nav-container
+    {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 40pc;
+        background-color: #e6dddde6;
+    }
+
+    .show
+    {
+        display: block;
+        position: fixed;
+    }
+
+    .nav-container ul
+    {
+        margin-top: 48px;
+        text-align:left;
+    }
+    
+    .nav-container li
+    {
+        display: block;
+        margin: 10px 20px;
+    }
+
+    .nav-container li a
+    {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media(max-width: 500px)
+{
+    .C-Bn
+    {
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
+        background-image: url('../assets/banners/mobile/300x190-bigger-banner.png');
+    }
+    .Tp2
+    {
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
+        background-image: url('../assets/banners/mobile/300x130-mid-img-mob.png');
+    }
+
+    .nav-container
+    {
+        width: 250px;
+        z-index: 3;
+    }
+
+    .F-links
+    {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .Prod
+    {
+        margin: 10px 0;
+        width:var(--Prod-Width_mob);
+        height:var(--Prod-height_mob);
+    }
+}
