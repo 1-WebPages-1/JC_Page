@@ -455,6 +455,11 @@ button a
     margin-bottom: 20px;
 }
 
+.h2_prod
+{
+    margin-top: 50px;
+}
+
 /* Social icons */
 
 .Social-i-Container
@@ -556,7 +561,7 @@ button a
     {
         width: var(--Def_pre_Size-W);
         height: var(--Def_pre_Size-H);
-        background-image: url('../assets/banners/tablet/728x350px-bigger-img.png');
+        background-image: url('../assets/banners/tablet/tablet-banner.png');
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: ". . ."
                              "text text text"
@@ -566,7 +571,7 @@ button a
     {
         width: var(--Def_pre_Size-W2);
         height: var(--Def_pre_Size-H-med);
-        background-image: url('../assets/banners/tablet/728x210-mid-img.png');
+        background-image: url('../assets/banners/tablet/tablet-banner.png');
     }
 
     /* Menu Icon */
@@ -633,13 +638,13 @@ button a
     {
         width: var(--Def_pre_Size-W);
         height: var(--Def_pre_Size-H);
-        background-image: url('../assets/banners/mobile/300x190-bigger-banner.png');
+        background-image: url('../assets/banners/mobile/mob-banner.png');
     }
     .Tp2
     {
         width: var(--Def_pre_Size-W);
         height: var(--Def_pre_Size-H);
-        background-image: url('../assets/banners/mobile/300x130-mid-img-mob.png');
+        background-image: url('../assets/banners/mobile/mob-banner.png');
     }
 
     .nav-container
