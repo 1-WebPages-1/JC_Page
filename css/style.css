@@ -124,7 +124,7 @@
 
     /* Product-Card size's */
     --Prod-Width: 300px;
-    --Prod-height: 430px;
+    --Prod-height: 450px;
 
     /* Mobile prod size */
 
@@ -287,6 +287,7 @@ button a
 {
     width: 100%;
     text-align: center;
+    z-index: 9;
 }
 
 .MenuList li
@@ -604,7 +605,7 @@ button a
         top: 0;
         width: 300px;
         height: 40pc;
-        background-color: #e6dddde6;
+        background-color: #2b2a2ad1;
     }
 
     .show

@@ -123,6 +123,18 @@ h2.T_In_Title
     right: 10px;
 }
 
+/* Simple imagen */
+.simple_image_presentation
+{
+    grid-area: PIm;
+}
+
+.simple_prod_presentation
+{
+    width: 500px;
+    height: 500px;
+}
+
 
 
 /* .Prod_pre_Img
@@ -185,7 +197,7 @@ ul.slider li:target
         grid-template-columns: auto;
     }
 
-    .Prod_pre_Img
+    .simple_prod_presentation
     {
         width: 300px;
         height: 300px;
@@ -201,7 +213,7 @@ ul.slider li:target
                              "CCard";
     }
 
-    .Prod_pre_Img
+    .simple_prod_presentation
     {
         width: 280px;
         height: 280px;
