@@ -4,36 +4,8 @@ document.querySelector('.M-Icon-Container').addEventListener('click', () =>
     document.querySelector('.nav-container').classList.toggle('show')
 });
 
-/* Cookies */
-const botonAceptarCookies = document.getElementById('btn-aceptar-cookies');
-const avisoCookies = document.getElementById('aviso-cookies');
-const fondoAvisoCookies = document.getElementById('fondo-aviso-cookies');
-
-dataLayer = [];
-
-if (!localStorage.getItem('cookies-aceptadas'))
-{
-  avisoCookies.classList.add('activo');
-  fondoAvisoCookies.classList.add('activo');
-} else {
-  dataLayer.push({'event': 'cookies-aceptadas'})
-}
-
-botonAceptarCookies.addEventListener('click', () => {
-  avisoCookies.classList.remove('activo');
-  fondoAvisoCookies.classList.remove('activo');
-
-  localStorage.setItem('cookies-aceptadas', true);
-
-  dataLayer.push({'event': 'cookies-aceptadas'});
-});
-
-
-
-  
 
 /* sliders */
-/* pagina de retroexcavadora */
 
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
@@ -77,3 +49,33 @@ btnLeft.addEventListener('click', function() {
 setInterval(function (){
   Next();
 }, 5000);
+
+
+/* Cookies */
+const botonAceptarCookies = document.getElementById('btn-aceptar-cookies');
+const avisoCookies = document.getElementById('aviso-cookies');
+const fondoAvisoCookies = document.getElementById('fondo-aviso-cookies');
+
+dataLayer = [];
+
+if (!localStorage.getItem('cookies-aceptadas'))
+{
+  avisoCookies.classList.add('activo');
+  fondoAvisoCookies.classList.add('activo');
+} else {
+  dataLayer.push({'event': 'cookies-aceptadas'})
+}
+
+botonAceptarCookies.addEventListener('click', () => {
+  avisoCookies.classList.remove('activo');
+  fondoAvisoCookies.classList.remove('activo');
+
+  localStorage.setItem('cookies-aceptadas', true);
+
+  dataLayer.push({'event': 'cookies-aceptadas'});
+});
+
+
+
+  
+
