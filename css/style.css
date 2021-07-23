@@ -278,7 +278,6 @@ button a
 .M-Icon-Container
 {
     display: none;
-    background-image: url('../assets/icons/jc-page-logo.png')
 }
 
 /* links del menu */
@@ -656,12 +655,13 @@ a.enlace-cookies:hover
     {
         display: block;
         position: absolute;
-        bottom: 45px;
+        bottom: 75px;
         right: 20px;
         border-radius: 50%;
-        padding: 15px;
-        border: 3px solid black;
-        background-color: white;
+        font-size: 23px;
+        padding: 13px;
+        border: 3px solid #fff;
+        background-color: #000;
         z-index: 9;
     }
 
